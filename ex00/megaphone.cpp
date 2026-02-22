@@ -6,7 +6,7 @@
 /*   By: oamairi <oamairi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/21 12:08:05 by oamairi           #+#    #+#             */
-/*   Updated: 2026/02/21 14:01:51 by oamairi          ###   ########.fr       */
+/*   Updated: 2026/02/22 13:38:45 by oamairi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int main(int ac, char **av)
 		return (0);
 	}
 	int i = 1;
-	while (av[i])
+	while (av && av[i])
 	{
 		int j = 0;
 		while (av[i] && av[i][j])
