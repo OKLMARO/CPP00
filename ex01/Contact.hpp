@@ -6,7 +6,7 @@
 /*   By: oamairi <oamairi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/25 13:34:59 by oamairi           #+#    #+#             */
-/*   Updated: 2026/02/25 15:26:06 by oamairi          ###   ########.fr       */
+/*   Updated: 2026/02/26 11:30:03 by oamairi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,11 +30,12 @@ class Contact
 		Contact(std::string Last, std::string First, std::string Number, int index, std::string Nickname, std::string Secret);
 		
 		int			getIndex();
-		void		setIndex(int index);
+		std::string getSecret();
 		std::string	getNickname();
 		std::string	getLastName();
 		std::string	getFirstName();
 		std::string	getNumberPhone();
+		void		setIndex(int index);
 		~Contact();
 };
 

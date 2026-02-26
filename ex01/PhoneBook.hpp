@@ -6,7 +6,7 @@
 /*   By: oamairi <oamairi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/25 13:39:05 by oamairi           #+#    #+#             */
-/*   Updated: 2026/02/25 14:57:49 by oamairi          ###   ########.fr       */
+/*   Updated: 2026/02/26 11:53:34 by oamairi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,10 @@ class PhoneBook
 
 	public:
 		PhoneBook();
-		int		add_user();
 		int		get_size();
+		void	add_user();
 		void	init_phone_book();
+		void	remplir_phone_book();
 		void	search();
 		~PhoneBook();
 };

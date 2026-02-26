@@ -6,7 +6,7 @@
 /*   By: oamairi <oamairi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/25 14:02:28 by oamairi           #+#    #+#             */
-/*   Updated: 2026/02/25 14:53:28 by oamairi          ###   ########.fr       */
+/*   Updated: 2026/02/26 11:29:28 by oamairi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@ Contact::Contact(std::string Last, std::string First, std::string Number, int in
 	this->LastName		= Last;
 	this->index			= index;
 	this->FirstName		= First;
+	this->Secret		= Secret;
 	this->NumberPhone	= Number;
 	this->Nickname		= Nickname;
-	this->Secret		= Secret;
 }
 
 int	Contact::getIndex()
@@ -52,6 +52,11 @@ std::string Contact::getFirstName()
 std::string Contact::getNumberPhone()
 {
 	return Contact::NumberPhone;
+}
+
+std::string Contact::getSecret()
+{
+	return Contact::Secret;
 }
 
 Contact::~Contact(){};
