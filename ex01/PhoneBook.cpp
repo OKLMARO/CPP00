@@ -6,7 +6,7 @@
 /*   By: oamairi <oamairi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/21 14:04:02 by oamairi           #+#    #+#             */
-/*   Updated: 2026/02/26 11:56:39 by oamairi          ###   ########.fr       */
+/*   Updated: 2026/02/28 15:59:36 by oamairi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@ void	PhoneBook::search()
 				{
 					std::cout << " ";
 				}
-				std::cout << contact_list[i].getFirstName();
+				std::cout << contact_list[i].getFirstName() << "|";
 			}
 			if (contact_list[i].getLastName().length() > 10)
 				std::cout << contact_list[i].getLastName().substr(0, 9) << ".|";
@@ -71,7 +71,7 @@ void	PhoneBook::search()
 				{
 					std::cout << " ";
 				}
-				std::cout << contact_list[i].getLastName();
+				std::cout << contact_list[i].getLastName() << "|";
 			}
 			if (contact_list[i].getNickname().length() > 10)
 				std::cout << contact_list[i].getNickname().substr(0, 9) << ".|";
@@ -82,7 +82,7 @@ void	PhoneBook::search()
 				{
 					std::cout << " ";
 				}
-				std::cout << contact_list[i].getNickname();
+				std::cout << contact_list[i].getNickname() << "|";
 			}
 			std::cout << "\n";
 		}
